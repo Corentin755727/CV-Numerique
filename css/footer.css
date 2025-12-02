@@ -1,9 +1,20 @@
 footer {
+    display: flex;
+    flex-direction: column;
     color: white;
     background-color: #333333;
     justify-content: center;
     align-items: center;
 }
-footer div {
-
+.coordonnees {
+    text-align: center;
+}
+.coordonnees a, p {
+    text-decoration: none;
+    font-weight: bold;
+    font-family: arial;
+    color: white;
+}
+.coordonnees a {
+    text-decoration: underline;
 }
