@@ -16,9 +16,6 @@ header a {
     font-weight: bold;
     font-family: arial;
 }
-.active {
-    background-color: #1a1a1a;
-}
 header a:hover {
     background-color: #222222;
 }

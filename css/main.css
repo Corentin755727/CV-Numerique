@@ -8,3 +8,26 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
+main p {
+    font-weight: 400;
+    color: black;
+}
+section {
+    padding-left: 30px;
+    scroll-margin-top: 82px;
+}
+h1 {
+    font-family: Helvetica;
+}
+h2 {
+    font-family: Arial;
+    font-weight: bold;
+}
+.ligne {
+    display: flex;
+    gap: 20px;
+
+}
+.accueil img {
+    border-radius: 10px;
+}
