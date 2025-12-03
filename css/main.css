@@ -14,7 +14,13 @@ main p {
 }
 section {
     padding-left: 30px;
-    scroll-margin-top: 82px;
+    scroll-margin-top: 60px;
+    position: relative;
+    height: calc(100vh - 60px);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 h1 {
     font-family: Helvetica;
@@ -38,14 +44,35 @@ h2 {
     z-index: -1;
     transform: scaleX(-1);
 }
-.a_propos {
-    position: relative;
-    height: calc(100vh - 60px);
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+img {
+    border-radius: 8px;
 }
-.a_propos img {
+.case-formation {
+    height: 400px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    background: #cccccc;
     border-radius: 10px;
+}
+.case-formation p {
+    font-family: Arial;
+    font-size: 17px;
+}
+.cadre-formation img {
+    max-width: 90%;
+    max-height: 90%;
+    display: block;
+    object-fit: contain;
+}
+.cadre-formation {
+    margin: 20px;
+    height: 200px;
+    width: 300px;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
