@@ -14,6 +14,7 @@ main p {
 }
 section {
     padding-left: 30px;
+    padding-right: 30px;
     scroll-margin-top: 60px;
     position: relative;
     height: calc(100vh - 60px);
@@ -56,7 +57,7 @@ img {
     background: #cccccc;
     border-radius: 10px;
 }
-.case-formation p {
+section p {
     font-family: Arial;
     font-size: 17px;
 }
@@ -75,4 +76,17 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.text {
+    max-width: 800px;
+}
+
+.case-realisations {
+    height: 680px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    background: #C0E0FF;
+    border-radius: 10px;
 }
