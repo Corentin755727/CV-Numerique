@@ -217,7 +217,7 @@ img {
         align-items: center;
     }
     .case-experience {
-        width: 80%;
+        width: 90%;
         min-width: 300px;
         height: auto;
     }
@@ -242,6 +242,7 @@ img {
 @media (max-width: 700px) {
     .cadre-formation, .cadre-experience {
         height: auto;
+        width: 90%;
     }
     .slider {
         height: 180px;
