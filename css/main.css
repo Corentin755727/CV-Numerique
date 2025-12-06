@@ -41,7 +41,6 @@ h2, h3 {
     gap: 20px;
     align-items: center;
     justify-content: center;
-    flex-warp: warp;
 }
 .video-background {
     position: absolute;
@@ -198,7 +197,7 @@ img {
     }
     .case-realisations {
         width: 85%;
-        min-width: 500px;
+        min-width: 300px;
         height: auto;
     }
     section {
@@ -219,7 +218,7 @@ img {
     }
     .case-experience {
         width: 80%;
-        min-width: 450px;
+        min-width: 300px;
         height: auto;
     }
 }
@@ -232,6 +231,12 @@ img {
         width: 40%;
         min-width: 250px;
         height: auto;
+    }
+}
+@media (max-width: 955px) {
+    .propos {
+        flex-direction: column;
+        align-items: center;
     }
 }
 @media (max-width: 700px) {
