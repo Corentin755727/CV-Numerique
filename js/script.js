@@ -57,3 +57,20 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 3000);
     });
 });
+const burger = document.querySelector('.burger');
+const nav = document.querySelector('header nav');
+const navLinks = document.querySelectorAll('header nav a');
+
+burger.addEventListener('click', () => {
+    nav.classList.toggle('active');
+});
+document.addEventListener('click', (e) => {
+    if (!nav.contains(e.target) && !burger.contains(e.target)) {
+        nav.classList.remove('active');
+    }
+});
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        nav.classList.remove('active');
+    });
+});
