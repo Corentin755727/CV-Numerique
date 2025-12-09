@@ -24,8 +24,15 @@ header a {
     font-family: arial;
     transition: background .2s;
 }
+.cv {
+    color: #222222;
+    background-color: #fefefe;
+}
 header a:hover {
     background-color: #222222;
+}
+.cv:hover {
+    background-color: #cbcbcb;
 }
 .burger {
     display: none;
