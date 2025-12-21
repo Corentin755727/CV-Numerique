@@ -15,7 +15,6 @@ main p {
 }
 /* - Sections - */
 section {
-    padding: 30px;
     scroll-margin-top: 60px;
     position: relative;
     height: calc(100vh - 60px);
@@ -48,8 +47,6 @@ h2, h3 {
     left: 50%;
     transform: translate(-50%, -50%);
     width: auto;
-    height: 100%;
-    min-width: 100%;
     min-height: 100%;
     object-fit: cover;
     z-index: -1;
@@ -77,7 +74,7 @@ img {
 .cadre-formation {
     margin: 20px;
     height: 200px;
-    width: 300px;
+    max-width: 300px;
     background: white;
     border-radius: 10px;
     display: flex;
@@ -102,7 +99,7 @@ img {
     text-align: center;
 }
 .case-competence p {
-    padding-left: 30px;
+    padding-left: 15px;
 }
 /* - Partie experiences - */
 .case-experience {
@@ -132,27 +129,38 @@ img {
 }
 /* - Partie realisations - */
 .case-realisations {
-    height: auto;
-    display: flex;
+    height: 65vh;
+    display: none;
     flex-direction: column;
     flex: 1;
     align-items: center;
     background: #C0E0FF;
     border-radius: 10px;
 }
-.boutons-realisations {
+.case-realisations.active {
     display: flex;
+}
+.boutons-choix, .boutons-realisations {
+    display: flex;
+    justify-content: center;
     gap: 10px;
     margin-bottom: 20px;
 }
-.perso-bouton, .pro-bouton {
+.choix-bouton, .perso-bouton, .pro-bouton {
+    margin-top: 15px;
     padding: 4px 8px;
     border: none;
     cursor: pointer;
     background: #ffffffaa;
+    font-size: 15px;
     border-radius: 6px;
 }
-.perso-bouton.active, .pro-bouton.active {
+.choix-bouton {
+    padding: 8px 14px;
+    font-size: 20px;
+    border-radius: 8px;
+}
+.choix-bouton.active, .perso-bouton.active, .pro-bouton.active {
     background: #fff;
     font-weight: bold;
 }
@@ -172,7 +180,7 @@ img {
 .slider {
     position: relative;
     width: 100%;
-    height: 20vh;
+    height: 40vh;
     overflow: hidden;
 }
 .slide {
@@ -205,7 +213,7 @@ img {
         padding: 40px 20px;
     }
 }
-@media (max-width: 1100px) {
+@media (max-width: 950px) {
     .formation {
         flex-direction: column;
         align-items: center;
@@ -222,7 +230,7 @@ img {
         height: auto;
     }
 }
-@media (max-width: 900px) {
+@media (max-width: 950px) {
     .competence {
         flex-direction: column;
         align-items: center;
