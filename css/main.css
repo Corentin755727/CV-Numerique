@@ -21,7 +21,7 @@ section {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
 }
 section p {
     font-family: Arial;
@@ -29,6 +29,7 @@ section p {
 }
 h1 {
     font-family: Helvetica;
+    margin: 40px;
 }
 h2, h3 {
     font-family: Arial;
@@ -156,6 +157,7 @@ img {
     border-radius: 6px;
 }
 .choix-bouton {
+    margin-top: -40px;
     padding: 8px 14px;
     font-size: 20px;
     border-radius: 8px;
@@ -174,7 +176,10 @@ img {
 }
 .perso-content.active, .pro-content.active {
     display: flex;
-    flex-direction: column;
+}
+.info-content {
+    font-family: Arial;
+    font-weight: bold;
 }
 /* - Partie slider - */
 .slider {
