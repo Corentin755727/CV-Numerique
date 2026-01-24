@@ -146,6 +146,7 @@ img {
 /* - Partie realisations - */
 .case-realisations {
     height: 65vh;
+    margin: 0 20px;
     display: none;
     flex-direction: column;
     flex: 1;
